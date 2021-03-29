@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 400px;
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 111px;
+        position: relative;
+        animation: heartbeat 0.5s infinite alternate;
+      }
+      .child {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(184, 105, 134);
+        border-radius: 50%;
+      }
+      .left {
+        left: 40px;
+      }
+      .right {
+        right: 40px;
+      }
+      .heart {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(184, 105, 134);
+        position: absolute;
+        top: 58px;
+        left: 100px;
+        transform: rotateZ(45deg);
+      }
+      .apple {
+        position: absolute;
+        left: 140px;
+        top: 120px;
+        font-weight: bold;
+        font-size: medium;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgb(117, 80, 134);
+      }
+      @keyframes heartbeat {
+        from {
+        }
+        to {
+          transform: scale(1.2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child left"></div>
+      <div class="child right"></div>
+      <div class="heart"></div>
+      <div class="apple">the gift for acceyuriko~</div>
+    </div>
+  </body>
+</html>
